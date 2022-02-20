@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "제너레이터"
-date:   2022-02-20 21:03:36 +0530
+date:   2022-02-20
 categories: Javascript React
 ---
 제너레이터란
@@ -14,7 +14,7 @@ function* f1() {
     return "finished";
 }
 ```
-* 별표와 함께 정의된 함수 제너레이터 함수 이다 
+* 별표와 함께 정의된 함수 제너레이터 함수 이다
 * yield 키워드를 사용하면 멈출수 있다
 * 제너레이터 함수를 실행하면 제너레이터 객체가 반환된다
 
@@ -116,7 +116,7 @@ const arr = [...f1]
 console.log(arr) // [10, 20, 30]
 ```
 
-제너레이트 활용하기 
+제너레이트 활용하기
 제너레이터로 구현한 map, filter, take 함수
 ```javascript
 function* map(iter, mapper) {
@@ -157,7 +157,7 @@ const result = take(3, map(filter(values, n => n % 2 === 0), n => n * 10))
 console.log([...result]) // [20, 40, 60]
 ```
 
-제너레이터 함수끼리 호출하기 
+제너레이터 함수끼리 호출하기
 
 제너레이터 함수가 다른 제너레이터 함수 호출하기
 ```javascript
